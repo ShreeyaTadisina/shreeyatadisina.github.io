@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roller Skating Passion</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0e6f6;
+            color: #40063f;
+            margin-top: 0;
+            margin-bottom: 70px;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #9c89b8;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #991e6a;
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #991e6a;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            display: none; /* Hide all sections by default */
+            margin-bottom: 30px;
+            
+        }
+
+        .active {
+            display: block; /* Show the active section */
+            height: auto;
+        }
+
+        h2 {
+            color: #ef476f;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        figure {
+            margin: 0;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        figcaption {
+            font-style: italic;
+            color: #4a4a4a;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #9c89b8;
+            color: #ffffff;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .divider {
+            color: #ef476f;
+            font-size: 1.5rem;
+        }
+        footer a{
+            color: #e391a4;
+            text-decoration: none;
+        }
+        /* Style for the enterprise link */
+        #enterprise-link {
+            color: #911e4e; /* Custom color for the enterprise link */
+            text-decoration: none; /* Remove underline */
+        }
+
+        #enterprise-link:hover {
+            color: #c05372; /* Hover color */
+            text-decoration: underline; /* Add underline on hover */
+        }
+
+        /* Form styling */
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        input[type="submit"] {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ef476f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #c70039;
+        }
+        .form{
+            border-radius: 20px; /* Curved corners */
+            background-color: #ffffff; /* Background color */
+            padding: 20px; /* Spacing inside the box */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+            max-width: 600px; /* Optional: Limit the width */
+            margin: 20px auto; /* Center the box */
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Roller Skating Passion</h1>
+    <nav>
+        <a href="#what" onclick="showSection('what')">Home</a>
+        <span class="divider">🛼</span>
+        <a href="#who" onclick="showSection('who')">About Me</a>
+        <span class="divider">🛼</span>
+        <a href="#when" onclick="showSection('when')">Best Times</a>
+        <span class="divider">🛼</span>
+        <a href="#where" onclick="showSection('where')">Best Locations</a>
+        <span class="divider">🛼</span>
+        <a href="#how" onclick="showSection('how')">How</a>
+        <span class="divider">🛼</span>
+        <a href="#why" onclick="showSection('why')">Why</a>
+        <span class="divider">🛼</span>
+        <a href="#ai-prompts" onclick="showSection('ai-prompts')">AI-Prompts</a>
+    </nav>
+</header>
+    
+
+    <main>
+        <!-- Home Section -->
+        <section id="what" class="active">
+            <h2>Home</h2>
+            <p>Roller skating is a fun and exhilarating activity that combines fitness, creativity, and community. Gliding through the air.</p>
+            <figure>
+                <img src="/itis3135/hobby/images/rollerskates.jpeg" alt="Roller Skates">
+                <figcaption>A pair of colorful roller skates ready for action.</figcaption>
+            </figure>
+            <p>Roller skating is a dynamic and exhilarating activity where individuals glide on smooth surfaces using specially designed boots with wheels attached to the bottom. It combines elements of balance, coordination, and rhythm, allowing skaters to move gracefully or perform tricks, depending on their skill level. Roller skating can be done indoors at rinks with polished floors or outdoors on sidewalks, trails, or skate parks. It’s not only a fun recreational activity but also a form of exercise, art, and self-expression, with styles ranging from casual cruising to competitive speed skating, jam skating, or roller derby. Whether you’re skating to music, learning new moves, or simply enjoying the sensation of rolling, roller skating offers a unique blend of freedom, creativity, and community.</p>
+
+            <!-- Form for rating roller skating difficulty -->
+            <div class="form">
+            <form id="difficulty-form">
+                <label for="difficulty-rating">On a scale of 1 to 10, how hard do you think roller skating is?</label>
+                <input type="range" id="difficulty-rating" name="difficulty-rating" min="1" max="10" value="5">
+                <span id="rating-value">5</span>/10
+                <br>
+                <input type="submit" value="Submit Rating">
+            </form>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="who">
+            <h2>About Me</h2>
+            <p>Hi, I'm Shreeya, a passionate roller skater with over 10 years of unprofessional experience. I love to show people just how much you can fail and then try again.</p>
+            <figure>
+                <img src="/itis3135/hobby/images/mefalling.jpeg" alt="A boy falling">
+                <figcaption>This is a representation of how I cry.</figcaption>
+            </figure>
+            <p>It all started with a pair of Heelys. You’d seen kids at the mall gliding effortlessly through the halls, their sneakers transforming into mini skateboards with a flick of their heels. You begged for a pair, and when you finally got them, you were convinced you’d be a natural. The first time you tried them, you strapped them on, stood up, and immediately wobbled. Your arms flailed as you tried to balance, and before you knew it, you were on the ground, knees scraped and pride bruised. “This is harder than it looks,” you muttered, but something about the thrill of almost-gliding kept you going.</p>
+            <p>After a few more falls (and a lot of laughter), you managed to roll a few feet without crashing. But as fun as Heelys were, they felt limiting. You wanted to go faster, turn sharper, and feel freer. That’s when your friend invited you to a roller skating rink. At first, you hesitated—roller skates looked big, clunky, and intimidating. But the memory of that first Heelys fall reminded you: falling wasn’t the end; it was part of the process.
+
+            </p>
+        </section>
+
+        <!-- Best Times Section -->
+        <section id="when">
+            <h2>Best Times</h2>
+            <p>The best times to roller skate are early mornings or late afternoons when the weather is cool and the sun isn't too harsh. Skating under the stars at night is also magical!</p>
+            <figure>
+                <img src="/itis3135/hobby/images/nightskating.jpeg" alt="Night Skating">
+                <figcaption>Skating under the stars at a park.</figcaption>
+            </figure>
+            <p>The best times to go roller skating depend on your vibe and location. For indoor rinks, weekday afternoons are perfect for a quieter, more relaxed session, while evenings and weekends bring lively crowds, music, and themed skate nights like disco or glow skate. Outdoor skating shines in the early mornings or late afternoons when the weather is cooler, and trails or parks are less crowded—spring and fall are ideal seasons for comfortable temperatures and scenic views. If you’re hitting skate parks, weekdays are often less busy, giving you more space to practice tricks. Whether you’re chasing a peaceful solo skate or a fun social experience, timing your session right can make all the difference! 🛼✨</p>
+            <!--For the Form-->
+            <div class="form">
+            <p>When do you like go skate?</p>
+            <form>
+                <input type="submit" value="Night">
+                <input type="submit" value="Day">
+            </form>
+            </div>
+        </section>
+
+        <!-- Best Locations Section -->
+        <section id="where">
+            <h2>Best Locations</h2>
+            <p>Some of the best places to roller skate include smooth pavements at parks, dedicated skate rinks, and boardwalks by the beach. Each location offers a unique experience.</p>
+            <figure>
+                <img src="/itis3135/hobby/images/girlsonlabeach.jpeg" alt="Beach Skating">
+                <figcaption>Skating along a scenic beach boardwalk.</figcaption>
+            </figure>
+            <p>America offers incredible places to roller skate, from iconic rinks like Moonlight Rollerway in Glendale, CA, and United Skates of America to scenic outdoor trails like Venice Beach Boardwalk in Los Angeles and Chicago’s Lakefront Trail. For skate park enthusiasts, Burnside Skatepark in Portland, OR, and Skatepark of Tampa are must-visit spots. Unique experiences like roller skating at New York’s Rockefeller Center or Disney’s special events add a touch of magic, while trails like the Marvin Braude Bike Trail in LA or Minneapolis’ Chain of Lakes provide stunning backdrops for outdoor skating. Whether you’re into rinks, parks, or trails, the U.S. has something for every skater! 🛼✨</p>
+            <!--For the Form-->
+            <div class="form">
+                <p>Where do you like to skate?</p>
+                <form>
+                    <label for="location">Location?</label><br>
+                    <input type="text" id="location" name="locationquestion"><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+
+        <!-- How Section -->
+        <section id="how">
+            <h2>How</h2>
+            <p>To get started with roller skating, you'll need a good pair of skates, protective gear, and a flat, smooth surface. Practice balancing, stopping, and turning to build your skills.</p>
+            <figure>
+                <img src="/itis3135/hobby/images/skateequipment.jpeg" alt="Skating Gear">
+                <figcaption>Essential roller skating gear: skates, helmet, and pads.</figcaption>
+            </figure>
+            <p>Starting roller skating begins with the basics: first, make sure your skates fit snugly and your safety gear (helmet, wrist guards, knee pads) is on. Stand with your feet shoulder-width apart, knees slightly bent, and lean forward a bit to maintain balance. Practice marching in place to get comfortable with the weight of the skates, then try gliding by pushing off with one foot while keeping the other foot steady. Use your arms for balance and look forward, not down. Start on a smooth, flat surface, and don’t be afraid to fall—it’s part of the learning process! With patience and practice, you’ll soon be rolling with confidence. 🛼✨</p>
+            <!--For the Form-->
+            <div class="form">
+                <p>Here is a check list for things you need:</p>
+                <form>
+                    <input type="checkbox" id="rollerskates" name="rollerskates" value="rollerskates">
+                    <label for="rollerskates"> Roller skates</label><br> 
+                    <input type="checkbox" id="helmet" name="helmet" value="helmet">
+                    <label for="helmet"> Helmet</label><br> 
+                    <input type="checkbox" id="elbow-pads" name="elbow-pads" value="elbow-pads">
+                    <label for="elbow-pads"> Elbow-pads</label><br>
+                    <input type="checkbox" id="Knee-pads" name="Knee-pads" value="Knee-pads">
+                    <label for="Knee-pads"> Knee-pads</label><br>
+                    <input type="submit" value="I'm READY!!">
+                </form>
+            </div>
+        </section>
+
+        <!-- Why Section -->
+        <section id="why">
+            <h2>Why</h2>
+            <p>Roller skating is more than just a sport—it's a way to express yourself, stay active, and connect with others. It's a joyful activity that brings people together and boosts mental and physical health.</p>
+            <figure>
+                <img src="/itis3135/hobby/images/whyskateisgood.jpeg" alt="Group Skating">
+                <figcaption>A group of friends skating together at a park.</figcaption>
+            </figure>
+            <p>Roller skating teaches you that failing is good because it inherently involves a lot of trial and error, especially when you're just starting out. Falling down is a natural part of the learning process, and each fall provides valuable feedback on what you need to improve, whether it's your balance, posture, or technique. Overcoming these small failures builds resilience, confidence, and a growth mindset, showing you that progress often comes from persistence and learning from mistakes. As you get back up and try again, you realize that failure isn't the end but a stepping stone to success, both on and off the rink.</p>
+            <p>Falling over and over in roller skating teaches a valuable lesson: failure is not the end but a stepping stone to growth. You can apply this mindset to other areas of life by embracing mistakes as opportunities to learn and improve. In school or work, view setbacks as feedback—analyze what went wrong, adjust your approach, and try again. In relationships, understand that misunderstandings or conflicts are chances to communicate better and build stronger connections. When pursuing hobbies or goals, accept that progress takes time and persistence, and each "fall" brings you closer to mastery. By reframing failure as a natural part of the journey, you build resilience, confidence, and a growth mindset that helps you thrive in any challenge. 🛼✨</p>
+        </section>
+
+        <!-- AI Prompts -->
+        <section id="ai-prompts">
+            <h2>AI Prompts used</h2>
+            <ul>
+                <li>In a paragraph please explain to me how roller skating teaches you failing is good</li>
+                <li>please describe what roller skating is in one paragraph</li>
+                <li>When are the best times to go roller skating</li>
+                <li>please tell me in a short paragraph the technique to start roller skating</li>
+                <li>please teach me how to hide and show pages</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed by <a id="enterprise-link" href="/itis3135/tadisinaenterprise.com/index.html">tadisinaenprise</a></p>
+        <p><a id="Disability/Accessibility" href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/UNCCID/itis3135/PAGENAME">Disability/Accessibility</a></p>
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+            <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+
+    <script>
+            document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach((section) => {
+                section.classList.remove('active');
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        // Show the Home section by default
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('what');
+        });
+        // Update the displayed rating value as the slider changes
+        const ratingSlider = document.getElementById('difficulty-rating');
+        const ratingValue = document.getElementById('rating-value');
+
+        ratingSlider.addEventListener('input', () => {
+            ratingValue.textContent = ratingSlider.value;
+        });
+
+        // Handle form submission
+        const form = document.getElementById('difficulty-form');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent the form from submitting
+            const rating = ratingSlider.value;
+            alert(`Thank you for your rating! You think roller skating is a ${rating}/10 in difficulty.`);
+        });
+        
+    </script>
+</body>
+</html>
