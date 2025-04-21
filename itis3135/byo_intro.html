@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BYO Intro </title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+    </head>
+
+
+
+    <body>
+
+    <header>
+        <div data-include="components/header.html"></div>
+
+    </header>
+
+        <main>
+            <h2>BYO Intro</h2>
+            <h3>Time to BYO Intro page, please fill out the form below so we can create your own page!</h3>
+            <nav>
+            </nav>
+            <form id="introForm">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required value="Text(Check if it's filled)">
+                    
+                    <label for="mascot">Mascot:</label>
+                    <input type="text" id="mascot" name="mascot" required value="Text(Check if it's filled)">
+                    
+                    <label for="image">Image Upload (PNG or JPG only):</label>
+                    <input type="file" id="image" name="image" accept=".png,.jpg,.jpeg" required>
+                    
+                    <label for="imageCaption">Image Caption:</label>
+                    <input type="text" id="imageCaption" name="imageCaption" required value="Text(Check if it's filled)">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Background Information</legend>
+                    <label for="personalBg">Personal Background:</label>
+                    <textarea id="personalBg" name="personalBg" required>Text(Check if it's filled)</textarea>
+                    
+                    <label for="professionalBg">Professional Background:</label>
+                    <textarea id="professionalBg" name="professionalBg" required>Text(Check if it's filled)</textarea>
+                    
+                    <label for="academicBg">Academic Background:</label>
+                    <textarea id="academicBg" name="academicBg" required>Text(Check if it's filled)</textarea>
+                    
+                    <label for="webBg">Background in Web Development:</label>
+                    <textarea id="webBg" name="webBg" required>Text(Check if it's filled)</textarea>
+                    
+                    <label for="platform">Primary Computer Platform:</label>
+                    <input type="text" id="platform" name="platform" required value="Text(Check if it's filled)">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Current Courses</legend>
+                    <div id="coursesContainer">
+                        <div class="courseEntry">
+                            <input type="text" name="course[]" placeholder="Course name" required value="Web Development">
+                            <button type="button" class="deleteCourse" style="display: none;">Delete</button>
+                        </div>
+                    </div>
+                    <button type="button" id="addCourse">Add Another Course</button>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label for="funnyThing">Funny thing?</label>
+                    <textarea id="funnyThing" name="funnyThing">Text</textarea>
+                    
+                    <label for="anythingElse">Anything else?</label>
+                    <textarea id="anythingElse" name="anythingElse">Text</textarea>
+                </fieldset>
+                
+                <fieldset>
+                    <label>
+                        <input type="checkbox" id="agreeCheck" name="agreeCheck" required>
+                        I understand that what is on this page is not password protected and I will not put anything here that I don't want publicly available.
+                    </label>
+                </fieldset>
+                
+                <div class="formControls">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+            <div id="formOutput" style="display: none;">
+                <a href="#" id="resetForm">Reset Form</a>
+            </div>
+        </main>
+
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/HTMLInclude.min.js"></script>
+        <script src="scripts/survey.js"></script>
+    </body>
+    </html>
