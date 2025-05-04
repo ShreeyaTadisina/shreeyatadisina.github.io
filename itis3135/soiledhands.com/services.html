@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Soiled Hands Private Chef</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+    <!-- Consistent Header -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" class="logo">SOILED HANDS</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Services Hero Section -->
+    <section class="services-hero">
+        <div class="hero-content">
+            <h1>Our Culinary Services</h1>
+            <p>Tailored experiences for every occasion</p>
+        </div>
+    </section>
+
+    <!-- Service Selection -->
+    <section class="services-filter">
+        <div class="container">
+            <div class="services-filter-options">
+                <label for="services-type">Select Service Type:</label>
+                <select id="service-type" class="services-dropdown">
+                    <option value="all">All Services</option>
+                    <option value="meal-prep">Weekly Meal Prep</option>
+                    <option value="dinner-parties">Dinner Parties</option>
+                    <option value="cooking-classes">Cooking Classes</option>
+                    <option value="special-events">Special Events</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-grid" id="services">
+        <div class="container">
+            <!-- Weekly Meal Prep -->
+            <div class="service-card" data-service="meal-prep">
+                <div class="service-icon">
+                    <i class="fas fa-calendar-week"></i>
+                </div>
+                <h2>Weekly Meal Prep</h2>
+                <div class="price">$250+ per week</div>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> 5 customized meals</li>
+                    <li><i class="fas fa-check"></i> Grocery shopping included</li>
+                    <li><i class="fas fa-check"></i> Dietary accommodations</li>
+                    <li><i class="fas fa-check"></i> Fresh ingredients</li>
+                </ul>
+                <a href="#contact" class="btn inquire-btn">Inquire Now</a>
+            </div>
+
+            <!-- Dinner Parties -->
+            <div class="service-card" data-service="dinner-parties">
+                <div class="service-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h2>Dinner Parties</h2>
+                <div class="price">$125 per person</div>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Custom menu planning</li>
+                    <li><i class="fas fa-check"></i> Full service setup</li>
+                    <li><i class="fas fa-check"></i> Wine pairing available</li>
+                    <li><i class="fas fa-check"></i> Complete cleanup</li>
+                </ul>
+                <a href="#contact" class="btn inquire-btn">Inquire Now</a>
+            </div>
+
+            <!-- Cooking Classes -->
+            <div class="service-card" data-service="cooking-classes">
+                <div class="service-icon">
+                    <i class="fas fa-mortar-pestle"></i>
+                </div>
+                <h2>Cooking Classes</h2>
+                <div class="price">$150 per hour</div>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Hands-on instruction</li>
+                    <li><i class="fas fa-check"></i> Theme customization</li>
+                    <li><i class="fas fa-check"></i> All materials provided</li>
+                    <li><i class="fas fa-check"></i> Recipe book included</li>
+                </ul>
+                <a href="#contact" class="btn inquire-btn">Inquire Now</a>
+            </div>
+
+            <!-- Special Events -->
+            <div class="service-card" data-service="special-events">
+                <div class="service-icon">
+                    <i class="fas fa-glass-cheers"></i>
+                </div>
+                <h2>Special Events</h2>
+                <div class="price">Custom Pricing</div>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Weddings & celebrations</li>
+                    <li><i class="fas fa-check"></i> Full event coordination</li>
+                    <li><i class="fas fa-check"></i> Staffing solutions</li>
+                    <li><i class="fas fa-check"></i> Rental equipment</li>
+                </ul>
+                <a href="#contact" class="btn inquire-btn">Inquire Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Process -->
+    <section class="service-process">
+        <div class="container">
+            <h2>Our Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Consultation</h3>
+                    <p>We discuss your vision, preferences, and dietary needs</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Menu Planning</h3>
+                    <p>Custom menu crafted based on seasonal ingredients</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Execution</h3>
+                    <p>Professional preparation and service</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Cleanup</h3>
+                    <p>We leave your kitchen spotless</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consistent Footer -->
+    <footer>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="copyright">
+            &copy; <span id="year"></span> Soiled Hands Private Chef Services. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="services.js"></script>
+</body>
+</html>

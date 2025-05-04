@@ -1,0 +1,394 @@
+/* Rustic Neutral Color Palette */
+:root {
+    --cream: #F5F1E6;
+    --tan: #D8C4A5;
+    --brown: #8B7355;
+    --dark-brown: #4A3C2A;
+    --sage: #A4B494;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background-color: var(--cream);
+    color: var(--dark-brown);
+    line-height: 1.6;
+}
+
+/* Header & Stacked Navigation */
+header {
+    background-color: #cac2be;
+    padding: 0.5rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5rem 2rem;
+}
+
+.logo-container {
+    margin: 0.5rem 0;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--dark-brown);
+    text-decoration: none;
+    letter-spacing: 1px;
+    display: block;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: var(--dark-brown);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+    padding: 0.5rem 0;
+}
+
+.nav-links a:hover {
+    color: var(--cream);
+}
+
+.nav-links .active {
+    border-bottom: 2px solid var(--sage);
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: var(--tan);
+    transition: all 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(#cac2be, rgba(75, 60, 42, 0.7)), 
+                url('/images/soiled-hands-logo.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--cream);
+    padding: 0 2rem;
+    margin-top: 120px; /* Adjusted for taller header */
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    max-width: 800px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--sage);
+    color: var(--dark-brown);
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+    margin: 0 1rem;
+}
+
+.btn:hover {
+    background-color: var(--tan);
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--cream);
+    color: var(--cream);
+}
+
+.btn-outline:hover {
+    background-color: var(--cream);
+    color: var(--dark-brown);
+}
+
+/* Intro Section */
+.intro {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--dark-brown);
+}
+
+.intro p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+/* Highlights Section */
+.highlights {
+    background-color: var(--tan);
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.highlights h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--dark-brown);
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature {
+    flex: 1;
+    min-width: 300px;
+    background-color: var(--cream);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature i {
+    font-size: 2.5rem;
+    color: var(--sage);
+    margin-bottom: 1.5rem;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--dark-brown);
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--dark-brown);
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial {
+    background-color: var(--tan);
+    padding: 2rem;
+    border-radius: 8px;
+    position: relative;
+}
+
+.testimonial:before {
+    content: '"';
+    font-size: 5rem;
+    color: rgba(139, 115, 85, 0.2);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial .author {
+    font-weight: bold;
+    color: var(--dark-brown);
+}
+
+/* CTA Section */
+.cta {
+    background-color: var(--dark-brown);
+    color: var(--cream);
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-brown);
+    color: var(--tan);
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.footer-links li {
+    margin: 0 1rem;
+}
+
+.footer-links a {
+    color: var(--tan);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--cream);
+}
+
+.copyright {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        position: relative;
+    }
+
+    .logo-container {
+        margin: 0.5rem auto;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 120px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 120px);
+        background-color: var(--dark-brown);
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 2rem;
+        transition: left 0.3s ease;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+
+    .hero {
+        margin-top: 120px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        display: block;
+        margin: 1rem auto;
+        width: 80%;
+    }
+}

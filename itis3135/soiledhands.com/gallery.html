@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Soiled Hands Private Chef</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <!-- Consistent Header -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" class="logo">SOILED HANDS</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Gallery Hero Section -->
+    <section class="gallery-hero">
+        <div class="hero-content">
+            <h1>Our Culinary Creations</h1>
+            <p>Visual stories of memorable dining experiences</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter">
+        <div class="container">
+            <div class="filter-options">
+                <label for="gallery-filter">Filter by:</label>
+                <select id="gallery-filter" class="filter-dropdown">
+                    <option value="all">All</option>
+                    <option value="weddings">Weddings</option>
+                    <option value="dinners">Plated Dinners</option>
+                    <option value="classes">Cooking Classes</option>
+                    <option value="seasonal">Seasonal Menus</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid" id="gallery">
+        <div class="container">
+            <!-- Wedding Gallery Items -->
+            <div class="gallery-item" data-category="weddings">
+                <img src="images/gallery/wedding-1.jpg" alt="Wedding banquet">
+                <div class="caption">Elegant Wedding Banquet</div>
+            </div>
+            <div class="gallery-item" data-category="weddings">
+                <img src="images/gallery/wedding-2.jpg" alt="Wedding cake">
+                <div class="caption">Custom Wedding Cake</div>
+            </div>
+
+            <!-- Dinner Gallery Items -->
+            <div class="gallery-item" data-category="dinners">
+                <img src="images/gallery/dinner-1.jpg" alt="Plated dinner">
+                <div class="caption">5-Course Valentine's Dinner</div>
+            </div>
+            <div class="gallery-item" data-category="dinners">
+                <img src="images/gallery/dinner-2.jpg" alt="Family style meal">
+                <div class="caption">Family Style Gathering</div>
+            </div>
+
+            <!-- Class Gallery Items -->
+            <div class="gallery-item" data-category="classes">
+                <img src="images/gallery/class-1.jpg" alt="Cooking class">
+                <div class="caption">Hands-On Pasta Making</div>
+            </div>
+            <div class="gallery-item" data-category="classes">
+                <img src="images/gallery/class-2.jpg" alt="Baking class">
+                <div class="caption">Artisan Bread Workshop</div>
+            </div>
+
+            <!-- Seasonal Gallery Items -->
+            <div class="gallery-item" data-category="seasonal">
+                <img src="images/gallery/seasonal-1.jpg" alt="Spring menu">
+                <div class="caption">Spring Harvest Menu</div>
+            </div>
+            <div class="gallery-item" data-category="seasonal">
+                <img src="images/gallery/seasonal-2.jpg" alt="Winter menu">
+                <div class="caption">Winter Comfort Dishes</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption" id="lightbox-caption"></div>
+    </div>
+
+    <!-- Consistent Footer -->
+    <footer>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="copyright">
+            &copy; <span id="year"></span> Soiled Hands Private Chef Services. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>

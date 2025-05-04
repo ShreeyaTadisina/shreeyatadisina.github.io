@@ -1,0 +1,347 @@
+/* Rustic Neutral Color Palette */
+:root {
+    --cream: #F5F1E6;
+    --tan: #D8C4A5;
+    --brown: #8B7355;
+    --dark-brown: #4A3C2A;
+    --sage: #A4B494;
+    --header-bg: #cac2be;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background-color: var(--cream);
+    color: var(--dark-brown);
+    line-height: 1.6;
+}
+
+/* Header - Consistent with Homepage */
+header {
+    background-color: var(--header-bg);
+    padding: 0.5rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5rem 2rem;
+}
+
+.logo-container {
+    margin: 0.5rem 0;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--dark-brown);
+    text-decoration: none;
+    letter-spacing: 1px;
+    display: block;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: var(--dark-brown);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+    padding: 0.5rem 0;
+}
+
+.nav-links a:hover {
+    color: var(--cream);
+}
+
+.nav-links .active {
+    border-bottom: 2px solid var(--sage);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: var(--dark-brown);
+    transition: all 0.3s ease;
+}
+
+/* About Hero Section - Matches Homepage Hero */
+.about-hero {
+    height: 60vh;
+    background: linear-gradient(var(--header-bg), rgba(110, 90, 64, 0.7)), 
+                url('../images/about-hero.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--dark-brown);
+    margin-top: 120px;
+}
+
+.about-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.about-hero-content p {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+/* About Content Section - Consistent Card Styles */
+.about-content {
+    padding: 5rem 2rem;
+    background-color: var(--cream);
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.chef-photo img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--tan);
+}
+
+.chef-bio h2 {
+    font-size: 2.5rem;
+    color: var(--dark-brown);
+    margin-bottom: 1.5rem;
+}
+
+.mission-statement {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--brown);
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    border-left: 3px solid var(--sage);
+}
+
+.bio-section {
+    margin-bottom: 2rem;
+}
+
+.bio-section h3 {
+    font-size: 1.5rem;
+    color: var(--dark-brown);
+    margin-bottom: 0.5rem;
+}
+
+.bio-section p {
+    color: var(--brown);
+    line-height: 1.7;
+}
+
+/* Credentials Section - Matches Features Styling */
+.credentials {
+    background-color: var(--tan);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.credentials h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--dark-brown);
+}
+
+.credentials ul {
+    list-style: none;
+}
+
+.credentials li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    color: var(--brown);
+}
+
+.credentials i {
+    margin-right: 0.8rem;
+    color: var(--sage);
+}
+
+/* Press Section - Matches Testimonials Styling */
+.press {
+    background-color: var(--tan);
+    padding: 4rem 2rem;
+    text-align: center;
+    border-top: 1px solid rgba(139, 115, 85, 0.2);
+    border-bottom: 1px solid rgba(139, 115, 85, 0.2);
+}
+
+.press-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.press h2 {
+    font-size: 2.5rem;
+    color: var(--dark-brown);
+    margin-bottom: 2rem;
+}
+
+.press-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.press-logos img {
+    height: 60px;
+    opacity: 0.8;
+    transition: all 0.3s;
+    filter: brightness(0.8);
+}
+
+.press-logos img:hover {
+    opacity: 1;
+    filter: brightness(1);
+}
+
+/* Footer - Exact Match to Homepage */
+footer {
+    background-color: var(--dark-brown);
+    color: var(--tan);
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.footer-links li {
+    margin: 0 1rem;
+}
+
+.footer-links a {
+    color: var(--tan);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--cream);
+}
+
+.copyright {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+    .about-hero {
+        height: 50vh;
+        margin-top: 120px;
+    }
+    
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 120px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 120px);
+        background-color: var(--dark-brown);
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 2rem;
+        transition: left 0.3s ease;
+    }
+    
+    .nav-links a {
+        color: var(--tan);
+    }
+    
+    .nav-links a:hover {
+        color: var(--cream);
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    .press-logos {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .press-logos img {
+        height: 50px;
+    }
+    
+    .about-hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .about-hero-content p {
+        font-size: 1.2rem;
+    }
+}
