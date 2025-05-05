@@ -234,7 +234,7 @@ nav {
 }
 
 .press-logos img {
-    height: 60px;
+    height: 200px;
     opacity: 0.8;
     transition: all 0.3s;
     filter: brightness(0.8);
